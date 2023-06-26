@@ -162,6 +162,4 @@ print(Fore.RED + "when winecfg is opened, go to libraries and add d3dcompiler47,
 print(Style.RESET_ALL)
 
 system("winecfg")
-input("press enter to continue")
 system("clear")
-input("press enter to continue")
