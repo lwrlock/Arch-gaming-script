@@ -2,6 +2,10 @@ from os import system, chdir
 import readline
 import time
 
+from colorama import Fore, Back, Style
+print(Fore.RED + "Which aur helper will you use?")
+print(Style.RESET_ALL)
+
 aur_helper = input("yay , paru = ")
 
 if aur_helper == "paru":
@@ -39,6 +43,26 @@ if de == "kde plasma minimal":
 if de == "kde plasma": 
           system("sudo pacman -S xorg xorg-xinit plasma plasma-wayland-session kde-applications")          
           input("press enter to continue")  
+
+system("clear")
+ 
+from colorama import Fore, Back, Style
+print(Fore.RED + "Which Display Manager do you use?")
+print(Style.RESET_ALL)
+
+dm = input("lightdm , sddm , ly , gdm = " )
+
+if dm == "lightdm":
+    system("sudo pacman -S lightdm lightdm-gtk-greeter && sudo systemctl enable lightdm")
+    
+if dm == "sddm":
+    system("sudo pacman -S sddm && sudo systemctl enable sddm")
+    
+if dm == "ly":
+    system("sudo pacman -S ly && sudo systemctl enable ly")
+    
+if dm == "gdm":
+    system("sudo pacman -S gdm && sudo systemctl enable gdm")
 
 system("clear")
                  
@@ -93,6 +117,32 @@ if bbswitch == "yes":
     
 if bbswitch == "no":
     input("press enter to continue")    
+
+system("clear")
+
+from colorama import Fore, Back, Style
+print(Fore.RED + "Do you want to undervolt ypur intel cpu?.")
+print(Style.RESET_ALL)
+
+undervolt = input("yes , no = ")
+
+if undervolt == "yes":
+    system("sudo pacman -S intel-undervolt nano && sudo nano /etc/intel-undervolt.conf && sudo systemctl enable intel-undervolt.service")
+
+if undervolt == "no":
+    input("press enter to continue")            
+
+from colorama import Fore, Back, Style
+print(Fore.RED + "Do you want optimus-manager?(just intel-nvidia and amd-nvidia users)")
+print(Style.RESET_ALL)
+
+optimus = input("yes , no = " )
+
+if optimus == "yes":
+     system(f"{aur_helper} -S optimus-manager && sudo cp /usr/share/optimus-manager.conf /etc/optimus-manager/optimus-manager.conf && sudo nano /etc/optimus-manager/optimus-manager.conf")
+
+if optimus == "no":
+     input("press enter to continue")     
 
 system("clear")
 
