@@ -19,7 +19,6 @@ aur_helper = input("what is your aur helper? = ")
 
 system("clear")
 
-from colorama import Fore, Back, Style
 print(Fore.RED + "Which desktop environment will you use?")
 print(Style.RESET_ALL)
 
@@ -46,7 +45,6 @@ if de == "kde plasma":
 
 system("clear")
  
-from colorama import Fore, Back, Style
 print(Fore.RED + "Which Display Manager do you use?")
 print(Style.RESET_ALL)
 
@@ -105,7 +103,6 @@ if gpu == "intel-nvidia":
 
 system("clear")
 
-from colorama import Fore, Back, Style
 print(Fore.RED + "if you want to install bbswitch write yes. If you dont want it write no.")
 print(Style.RESET_ALL)
 
@@ -120,7 +117,6 @@ if bbswitch == "no":
 
 system("clear")
 
-from colorama import Fore, Back, Style
 print(Fore.RED + "Do you want to undervolt ypur intel cpu?.")
 print(Style.RESET_ALL)
 
@@ -132,7 +128,6 @@ if undervolt == "yes":
 if undervolt == "no":
     input("press enter to continue")            
 
-from colorama import Fore, Back, Style
 print(Fore.RED + "Do you want optimus-manager?(just intel-nvidia and amd-nvidia users)")
 print(Style.RESET_ALL)
 
@@ -146,7 +141,6 @@ if optimus == "no":
 
 system("clear")
 
-from colorama import Fore, Back, Style
 print(Fore.RED + "Now the necessary packages for the games will be installed.")
 print(Style.RESET_ALL)
 input("press enter to continue")
@@ -157,9 +151,7 @@ system("sudo pacman -S --needed lib32-libldap giflib lib32-giflib libpng lib32-l
 
 system("clear")
 
-from colorama import Fore, Back, Style
 print(Fore.RED + "when winecfg is opened, go to libraries and add d3dcompiler47, d3d10 and d3d11. d3d11 and d3d10 is need to be native, d3dcompiler is need to be default.")
 print(Style.RESET_ALL)
 
 system("winecfg")
-system("clear")
