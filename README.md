@@ -1,6 +1,6 @@
 # Arch-script
 Arch linux gaming script prepared with python. Works on Vulkan supported graphics cards.
-# Installation
+## Installation
 `git clone https://github.com/lwrlock/Arch-script.git`
 
 `cd Arch-script/`
