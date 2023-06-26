@@ -2,12 +2,21 @@ from os import system, chdir
 import readline
 import time
 
+aur_helper = input("yay , paru = ")
+
+if aur_helper == "paru":
+                 system("git clone https://aur.archlinux.org/paru.git && cd paru &&  makepkg -si")
+                 
+if aur_helper == "yay":
+                 system("git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si")                
+system("clear")
+
 aur_helper = input("what is your aur helper? = ")
 
 system("clear")
 
 from colorama import Fore, Back, Style
-print(Fore.RED + "what is your desktop enviroment?")
+print(Fore.RED + "Which desktop environment will you use?")
 print(Style.RESET_ALL)
 
 de = input("gnome , gnome debloated , xfce4 , kde plasma , kde plasma minimal = ")
