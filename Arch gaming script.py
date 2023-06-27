@@ -93,7 +93,7 @@ system("clear")
 gpu = input("amd , nvidia , intel , intel-nvidia? = ")
 
 if gpu == "amd":
-    system("sudo pacman -S --needed lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader")
+    system("sudo pacman -S --needed mesa lib32-mesa vulkan-radeon lib32-vulkan-radeon vulkan-icd-loader lib32-vulkan-icd-loader")
     input("press enter to continue")
 
 if gpu == "nvidia":
