@@ -178,3 +178,15 @@ system(f"{aur_helper} -S vazirmatn-fonts vazir-code-fonts ttf-joypixels ttf-linu
 system("clear")
 
 input("press enter to continue")
+
+
+
+
+
+
+
+
+
+
+
+#yani şimdi ayıp değil hayalet olmak
