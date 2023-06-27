@@ -163,3 +163,18 @@ print(Fore.RED + "when winecfg is opened, go to libraries and add d3dcompiler47,
 print(Style.RESET_ALL)
 
 system("winecfg")
+input("press enter to continue")
+system("clear")
+
+
+print(Fore.RED + "Installing important font packages.")
+print(Style.RESET_ALL)
+input("press enter to continue")
+
+system("sudo pacman -S gnu-free-fonts noto-fonts sdl2_ttf ttf-bitstream-vera ttf-caladea ttf-carlito ttf-croscore ttf-dejavu birdfont opendesktop-fonts perl-font-ttf sdl_ttf ttf-anonymous-pro ttf-arphic-ukai ttf-baekmuk ttf-cascadia-code ttf-cormorant ttf-eurof ttf-fantasque-sans-mono ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-font-awesome ttf-hanazono ttf-hannom ttf-ibm-plex ttf-inconsolata ttf-indic-otf ttf-ionicons ttf-jetbrains-mono ttf-joypixels ttf-junicode ttf-khmer ttf-lato ttf-liberation ttf-linux-libertine ttf-linux-libertine-g ttf-monofur ttf-opensans ttf-proggy-clean ttf-roboto ttf-roboto-mono ttf-sarasa-gothic ttf-sazanami ttf-tibetan-machine")
+
+system(f"{aur_helper} -S vazirmatn-fonts vazir-code-fonts ttf-joypixels ttf-linux-libertine noto-color-emoji-fontconfig noto-fonts-emoji otf-san-francisco apple-fonts ttf-mac-fonts ttf-font-awesome adobe-source-code-pro-fonts ttf-comic-mono-git")
+
+system("clear")
+
+input("press enter to continue")
