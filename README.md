@@ -5,4 +5,4 @@ Arch linux gaming script prepared with python. Works on Vulkan supported graphic
 
 `cd Arch-gaming-script/`
 
-`python Arch\ gaming\ script.py`
+`python Arch-gaming-script.py`
