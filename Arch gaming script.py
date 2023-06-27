@@ -35,6 +35,13 @@ if de == "gnome debloated":
 if de == "xfce4":
           system("sudo pacman -S xfce4 xfce4-goodies xorg xorg-xinit")
           input("press enter to continue") 
+          compositor = input("do you want to disable compositor for xfce4(Yes/No) ? = ")
+          if compositor == "Yes":
+            system("xfconf-query -c xfwm4 -p /general/use_compositing -s false")
+            print("compositor is disabled!")
+            input("press enter to continue")
+
+
 
 if de == "kde plasma minimal":
           system("sudo pacman -S plasma-desktop konsole dolphin ark")
@@ -128,7 +135,8 @@ if undervolt == "yes":
 if undervolt == "no":
     input("press enter to continue")            
 
-print(Fore.RED + "Do you want optimus-manager?(just intel-nvidia and amd-nvidia users)")
+from colorama import Fore, Back, Style
+print(Fore.RED + "Do you want optimus-manager?(just intel-nvidia and amd-intel users)")
 print(Style.RESET_ALL)
 
 optimus = input("yes , no = " )
