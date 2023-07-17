@@ -65,7 +65,7 @@ elif aur_helper == "yay":
 if de == "gnome":
           system("sudo pacman -S gnome xorg xorg-xinit")
 if de == "gnome debloated":          
-          system("sudo pacman -S eog evince file-roller gnome-backgrounds gnome-characters gnome-color-manager gnome-terminal gnome-control-center gnome-disk-utility gnome-menus gnome-session gnome-settings-daemon gnome-shell gnome-shell-extensions gnome-text-editor gnome-tweaks gvfs gvfs-afc gvfs-mtp nautilus xdg-user-dirs-gtk xdg-desktop-portal xdg-desktop-portal-gnome xdg-desktop-portal-gtk xdg-user-dirs xdg-utils xorg xorg-xinit")
+          system("sudo pacman -S eog evince file-roller gnome-backgrounds gnome-terminal gnome-control-center gnome-disk-utility gnome-menus gnome-session gnome-settings-daemon gnome-shell gnome-shell-extensions gnome-tweaks gvfs gvfs-afc gvfs-mtp nautilus xdg-user-dirs-gtk xdg-desktop-portal xdg-desktop-portal-gnome xdg-desktop-portal-gtk xdg-user-dirs xdg-utils xorg xorg-xinit")
           input("press enter to continue")
 if de == "xfce4":
           system("sudo pacman -S xfce4 xfce4-goodies xorg xorg-xinit")
@@ -142,7 +142,7 @@ print(Style.RESET_ALL)
 
 input("press enter to continue")
 
-system(f"{aur_helper} -S --needed lutris vkd3d wine-mono lib32-vkd3d wine-staging winetricks bottles protontricks-git protonup-qt wine-lol dxvk-bin steam steam-native-runtime")
+system(f"{aur_helper} -S --needed lutris vkd3d wine-mono lib32-vkd3d wine-staging winetricks bottles protontricks-git protonup-qt dxvk-bin steam steam-native-runtime")
 
 input("press enter to continue")
 
@@ -178,4 +178,4 @@ input("press enter to continue")
 
 
 
-#yani şimdi ayıp değil hayalet olmak
+#Yıkık akşam keyfime dey ;)
