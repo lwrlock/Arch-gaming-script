@@ -137,12 +137,12 @@ elif optimus == "no":
      input("press enter to continue")     
 system("clear")
 
-print(Fore.RED + "Now the necessary packages for the games will be installed.")
+print(Fore.RED + "Now the necessary packages for the games and performance will be installed.")
 print(Style.RESET_ALL)
 
 input("press enter to continue")
 
-system(f"{aur_helper} -S --needed lutris vkd3d wine-mono lib32-vkd3d wine-staging winetricks bottles protontricks-git protonup-qt dxvk-bin steam steam-native-runtime")
+system(f"{aur_helper} -S --needed irqbalance thermald ananicy-cpp lutris vkd3d wine-mono lib32-vkd3d wine-staging winetricks bottles protontricks-git protonup-qt dxvk-bin steam steam-native-runtime && sudo systemctl enable irqbalance thermald ananicy")
 
 input("press enter to continue")
 
