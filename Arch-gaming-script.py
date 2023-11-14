@@ -19,7 +19,7 @@ print(Fore.GREEN + "Which Display Manager do you use?")
 print(Style.RESET_ALL)
 dm = input("lightdm , sddm , ly , gdm = " )
 system("clear")
-kernel = input("zen kernel , lts kernel , xanmod kernel? = ")
+kernel = input("zen kernel , lts kernel? =  ")
 system("clear")
 print(Fore.GREEN + "if you want to install bbswitch write yes. If you dont want it write no.")
 print(Style.RESET_ALL)
@@ -65,7 +65,7 @@ elif aur_helper == "yay":
 if de == "gnome":
           system("sudo pacman -S gnome xorg xorg-xinit")
 if de == "gnome debloated":          
-          system("sudo pacman -S eog evince file-roller gnome-backgrounds gnome-terminal gnome-control-center gnome-disk-utility gnome-menus gnome-session gnome-settings-daemon gnome-shell gnome-shell-extensions gnome-tweaks gvfs gvfs-afc gvfs-mtp nautilus xdg-user-dirs-gtk xdg-desktop-portal xdg-desktop-portal-gnome xdg-desktop-portal-gtk xdg-user-dirs xdg-utils xorg xorg-xinit")
+          system("sudo pacman -S eog evince file-roller gnome-terminal gnome-control-center gnome-disk-utility gnome-menus gnome-session gnome-settings-daemon gnome-shell gnome-shell-extensions gnome-tweaks gvfs gvfs-afc gvfs-mtp nautilus xdg-user-dirs-gtk xdg-desktop-portal xdg-desktop-portal-gnome xdg-desktop-portal-gtk xdg-user-dirs xdg-utils xorg xorg-xinit")
           input("press enter to continue")
 if de == "xfce4":
           system("sudo pacman -S xfce4 xfce4-goodies xorg xorg-xinit")
@@ -97,9 +97,6 @@ if kernel == "zen kernel":
     input("press enter to continue")
 if kernel == "lts kernel":
     system("sudo pacman -S linux-lts linux-lts-headers")
-    input("press enter to continue")
-if kernel == "xanmod kernel":    
-    system("sudo pacman -S linux-xanmod linux-xanmod-headers")   
     input("press enter to continue")
 system("sudo grub-mkconfig -o /boot/grub/grub.cfg") 
 input("press enter to continue")
@@ -142,20 +139,11 @@ print(Style.RESET_ALL)
 
 input("press enter to continue")
 
-system(f"{aur_helper} -S --needed irqbalance thermald ananicy-cpp lutris vkd3d wine-mono lib32-vkd3d wine-staging winetricks bottles protontricks-git protonup-qt dxvk-bin steam steam-native-runtime && sudo systemctl enable irqbalance thermald ananicy")
+system(f"{aur_helper} -S --needed irqbalance thermald ananicy-cpp lutris vkd3d wine-mono lib32-vkd3d wine-staging winetricks bottles protontricks-git protonup-qt dxvk-bin steam steam-native-runtime && sudo systemctl enable irqbalance thermald ananicy-cpp")
 
 input("press enter to continue")
 
 system("sudo pacman -S --needed lib32-libldap giflib lib32-giflib libpng lib32-libpng libldap lib32-libldap gnutls lib32-gnutls mpg123 lib32-mpg123 openal lib32-openal v4l-utils lib32-v4l-utils libpulse lib32-libpulse alsa-plugins lib32-alsa-plugins alsa-lib lib32-alsa-lib libjpeg-turbo lib32-libjpeg-turbo libxcomposite lib32-libxcomposite libxinerama lib32-libxinerama ncurses lib32-ncurses opencl-icd-loader lib32-opencl-icd-loader libxslt lib32-libxslt libva lib32-libva gtk3 lib32-gtk3 gst-plugins-base-libs lib32-gst-plugins-base-libs vulkan-icd-loader lib32-vulkan-icd-loader gamemode innoextract lib32-gamemode lib32-vkd3d vkd3d")
-
-system("clear")
-
-print(Fore.RED + "when winecfg is opened, go to libraries and add d3dcompiler47, d3d10 and d3d11. d3d11 and d3d10 is need to be native, d3dcompiler is need to be default.")
-print(Style.RESET_ALL)
-
-system("winecfg")
-
-input("press enter to continue")
 
 system("clear")
 
